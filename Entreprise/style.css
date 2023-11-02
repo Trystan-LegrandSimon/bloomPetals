@@ -54,3 +54,11 @@ header {
   height: 100%;
   display: block;
 }
+
+footer {
+  background-color: #333;
+  padding: 20px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
