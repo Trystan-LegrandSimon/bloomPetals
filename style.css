@@ -48,7 +48,20 @@ header {
 
 .presentation {
   padding: 30px 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.presentation > h1 {
+  font-size: 75px;
+  padding-bottom: 20px;
+}
+
+.presentation > p {
+  max-width: 700px;
+}
+
 /* Section Images */
 .img_container {
   padding-top: 30px;
@@ -66,26 +79,40 @@ header {
 }
 
 /* section services */
-.services_container {
-  padding: 30px 0 30px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.services_container ul {
-  padding: 0;
-  margin: 0;
+.ul_services_container {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  width: 100%;
+  justify-content: space-between; /* Pour l'espacement entre les colonnes */
 }
 
-.services_container li {
-  width: calc(33.3% - 10px);
-  margin-bottom: 20px;
+.list_services_container {
+  width: calc(33.33% - 20px); /* Pour créer trois colonnes, avec 20px d'espacement */
+  margin-bottom: 20px; /* Espacement entre les lignes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.list_services_container h2 {
+  width: 100%; /* Ajuste la largeur pour occuper toute la largeur de la colonne */
+  text-align: center; /* Centre le texte */
+  padding-top: 30px;
+}
+
+.list_services_container p {
+  text-align: justify; /* Justifie le texte du paragraphe */
+  padding-top: 10px;
+  max-width: 90%;
+}
+
+.list_services_container span {
+  display: block;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+}
 ::-webkit-scrollbar {
   display: none;
 }
