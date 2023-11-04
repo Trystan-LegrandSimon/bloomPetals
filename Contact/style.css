@@ -35,37 +35,105 @@ header {
 .menu ul li a:hover {
   background-color: #555;
 }
-
-main {
+.container {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  border: 3px black solid;
-  margin: 10%;
-  background-color: burlywood;
+  align-items: center;
+  justify-content: center;
 }
 
-main > h1 {
- font-size: 65px;
+.card {
+  width: 900px;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 20px;
+  background-color: #555;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+  padding-bottom: 30px;
+  color: white;
+}
+
+.card > h1 {
+  padding-top: 30px;
+  font-weight: 600;
+  font-size: 52px;
+  text-align: center;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 30px;
 }
 
 .form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   padding: 10px;
+}
+
+.form-group label {
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-group input[type=text] {
+  height: 30px;
+  width: 300px;
+}
+
+.form-group select {
+  height: 30px;
+  width: 300px;
+}
+
+.form-group textarea {
+  height: 100px;
+  width: 300px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  margin-left: 20px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.form-group input[type=checkbox] {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.sub_btn {
+  height: 50px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.sub_btn:hover {
+  height: 50px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: rgb(3, 211, 3);
 }
 
 footer {
   background-color: #333;
   padding: 20px;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
